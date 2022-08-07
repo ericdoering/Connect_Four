@@ -1,0 +1,57 @@
+/* game board table */
+
+body {
+  text-align: center;
+  font-family: monospace;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/387eb18b-ab74-4503-a97f-b5e6143eb21d/d2cwpai-63d70352-ca6e-4a2b-8d19-d7b042761470.png/v1/fill/w_979,h_816,q_70,strp/black_white_gradient_by_halaxega_d2cwpai-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcLzM4N2ViMThiLWFiNzQtNDUwMy1hOTdmLWI1ZTYxNDNlYjIxZFwvZDJjd3BhaS02M2Q3MDM1Mi1jYTZlLTRhMmItOGQxOS1kN2IwNDI3NjE0NzAucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ug3GNxdx3Z5HKG-UDduNjJXoLrekcevNHq6YQeP6faQ");
+}
+
+div{
+  margin-left: 10%;
+}
+
+h1{
+  font-size: 50px;
+  color: rgb(194, 11, 11);
+  -webkit-text-stroke: 2px rgb(237, 230, 14);
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(237, 230, 14);
+}
+
+#board td {
+  width: 60px;
+  height: 60px;
+  border: solid 3px rgb(237, 230, 14);
+  border-radius: 50px;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 0px;
+  width:  100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.p1 {
+  background-color:dodgerblue;
+}
+
+.p2 {
+  background-color:crimson;
+}
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgb(250, 247, 247);
+}
